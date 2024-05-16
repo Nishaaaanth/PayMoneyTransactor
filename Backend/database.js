@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.createConnection(Bun.env.URI);
+mongoose.connect(Bun.env.URI);
 
 const userSchema = mongoose.Schema({
     username: {
